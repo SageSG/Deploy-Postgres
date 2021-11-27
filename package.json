@@ -1,0 +1,19 @@
+{
+  "name": "hospitalapi",
+  "version": "1.0.0",
+  "description": "backend postgres",
+  "main": "app.js",
+  "scripts": {
+    "test": "node app.js",
+    "start": "node app.js"
+  },
+  "author": "henry",
+  "license": "ISC",
+  "dependencies": {
+    "cors": "^2.8.5",
+    "dotenv": "^10.0.0",
+    "express": "^4.17.1",
+    "nodemon": "^2.0.15",
+    "pg-promise": "^10.11.1"
+  }
+}

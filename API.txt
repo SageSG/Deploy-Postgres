@@ -1,0 +1,26 @@
+List of all working routes & APIs
+===================================
+
+/// BED ///
+
+url: localhost:5000
+
+GET
+# Select * from bed
+/bed/all
+
+# SELECT ward.hospitalid, ward.wardid, bed.bedid, bed.bedstatus
+/bed/gethospbeds
+
+# SELECT ward.wardid, bed.bedid, bed.bedstatus where bed.bedstatus = 0
+/bed/getwardbeds
+
+/// HOSPITAL ///
+
+GET
+/hos/gethospitals
+
+
+/// HOSPITAL ///
+
+/hospital/getall
