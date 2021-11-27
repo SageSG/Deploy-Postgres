@@ -16,4 +16,12 @@ router.get('/icubedstatus', (req, response) => {
     })
 })
 
+router.get('/alldischarge', (req, response) => {
+    db.query("Select * from patient where patient.dischargedate between (NOW() - INTERVAL '14 DAY') AND NOW();", (err, res) => {
+        if (err) throw err
+        response.json(res.rows)
+    })
+})
+
+
 module.exports = router;
