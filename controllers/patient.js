@@ -1,6 +1,6 @@
 const express = require("express")
 const router = express.Router()
-const db = require('../config/dbconfig')
+const db = require('../connection')
 
 router.get('/all', (req, res) => {
     db.any("Select patientid, patientname, date(admissiondate) as admissiondate, date(dischargedate) as dischargedate, statusno from patient;").then(rows=>{
